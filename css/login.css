@@ -1,0 +1,45 @@
+body
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+#first
+{
+    background-color: #7D9D9C;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 3vw;
+    width: 90%;
+    max-width: 250px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 200px auto;
+    font-family: Arial;
+    font-size: 20px;
+}
+#first a
+{
+    text-decoration: none;
+}
+#first a:hover
+{
+    color: red;
+}
+#button
+{
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+#button:hover
+{
+    background-color: #E4DCCF;
+    color: black;
+    transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+.question{
+    border-radius: 5px;
+}
+
+.question h4{
+    background-color: aliceblue;
+    text-align: center;
+    padding:10px; 
+    border-radius: 5px;
+}
+
+.answer{
+    padding:20px;
+}
+.answer p{
+    text-align:center;
+}
