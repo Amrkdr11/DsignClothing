@@ -105,17 +105,13 @@
 </div> 
 
 <?php
-	$hostname = "localhost:3307";
-	$username = "root";
-	$password = "";
-	$dbname = "clothing store";
-		
-	$connect = mysqli_connect($hostname, $username, $password, $dbname)
-					OR DIE("Connection failed!");
+  include 'config.php'
+?>
+	<?php
 	
   $sql="SELECT * FROM product ORDER BY RAND() LIMIT 4 ";
 
-	$sendsql = mysqli_query($connect, $sql);
+	$sendsql = mysqli_query($conn, $sql);
 
 		if($sendsql)
 		{

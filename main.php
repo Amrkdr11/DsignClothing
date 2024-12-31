@@ -66,18 +66,12 @@
 <h2 style="text-align:center;">Our Product</h2>
   <div class="row">
     <?php
-		$hostname = "localhost:3307";
-		$username = "root";
-		$password = "";
-		$dbname = "clothing store";
-		
+		include 'config.php'?>
+		<?php
 		$sql = "SELECT * FROM product";
-		
-		$connect = mysqli_connect($hostname, $username, $password, $dbname)
-					OR DIE("Connection failed!");
-			
+
 					
-		$sendsql = mysqli_query($connect, $sql);
+		$sendsql = mysqli_query($conn, $sql);
 		if($sendsql)
 		{
 			foreach($sendsql as $row)

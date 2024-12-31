@@ -99,20 +99,16 @@
 
 
 <?php
-	$hostname = "localhost:3307";
-	$username = "root";
-	$password = "";
-	$dbname = "clothing store";
-		
-	$connect = mysqli_connect($hostname, $username, $password, $dbname)
-					OR DIE("Connection failed!");
+  include 'config.php'
+?>
+<?php
 			
 		
 	if(isset($_POST['Submit'])){
-        $search=mysqli_real_escape_string($connect,$_POST['search-item']);
+        $search=mysqli_real_escape_string($conn,$_POST['search-item']);
         
         $sql="SELECT * FROM product WHERE PRODUCT_NAME LIKE '%$search%' OR  PRODUCT_PRICE LIKE '%$search%' " ;
-        $result=mysqli_query($connect,$sql);
+        $result=mysqli_query($conn,$sql);
         $queryResult=mysqli_num_rows($result);
 		
         echo "<div class=\"content\">";

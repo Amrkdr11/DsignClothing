@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+    include 'config.php'?>
+    <?php
+    mysqli_close($conn);
+
+    ?>
 <html>
     <head>
         <title>User Option</title>
@@ -8,6 +14,7 @@
     </head>
 
     <body style="background-image: url(image/logo.png);">
+    
     <fieldset id = "first">
                 <br>
                 <b>Welcome to D-Sign <br> Clothing Store</b>
