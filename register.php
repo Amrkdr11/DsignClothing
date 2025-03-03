@@ -111,7 +111,7 @@
 			<input type="email" name="email" placeholder="Enter your email" value="<?php echo $email; ?>">
 			<br>
 			<label for="phone">Phone Number :</label>
-			<input type="text" name="phone" placeholder="Enter your phone number" value="<?php echo $phone; ?>">
+			<input type="text" name="phone" placeholder="Enter your phonez number" value="<?php echo $phone; ?>">
 			<br>
 			<label for="address">Address :</label>
 			<input type="text" name="address" placeholder="Enter your address" value="<?php echo $address; ?>">
